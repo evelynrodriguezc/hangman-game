@@ -1,14 +1,15 @@
-//guessLetter()
-//inputLetter
-//letters
-//used-letters
-//hangman-draw
-//hangman
-//message
-//word
-//game-container
+let words = [
+    "javascript",
+    "lie",
+    "html",
+    "code",
+    "backend",
+    "frontend",
+    "word",
+    "guess",
+    "laptop"
+];
 
-let words = ["javascript", "lie", "html", "code", "backend", "frontend"];
 let chosenWord = words[Math.floor(Math.random() * words.length)];
 let wordDash = Array(chosenWord.length).fill("_ ");
 let usedLetters = [];
