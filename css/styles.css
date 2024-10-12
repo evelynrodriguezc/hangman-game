@@ -1,0 +1,145 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #00796b; /* Dark teal */
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section Styles */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    color: #00796b;
+}
+
+/* Game Container Styles */
+#game-container {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto;
+    display: flex; /* Use flexbox */
+    flex-direction: column;
+    align-items: center; /* Center align items */
+}
+
+/* Word Styles */
+#word {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #d32f2f; /* Red color for the word */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-align: center; /* Center align the word */
+}
+
+/* Message Styles */
+#message {
+    margin: 1rem 0;
+    font-weight: bold;
+    color: #d32f2f; /* Red color for messages */
+}
+
+/* Hangman Drawing Styles */
+#hangman {
+    margin: 1rem 0;
+    font-family: monospace; /* Monospace for hangman drawing */
+    white-space: pre; /* Preserve whitespace for hangman */
+    font-size: 1.5rem;
+    color: #795548; /* Brown color for hangman */
+}
+
+/* Used Letters Styles */
+#used-letters {
+    margin: 1rem 0;
+}
+
+#letters {
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+/* Input and Button Styles */
+input[type="text"] {
+    padding: 0.75rem;
+    border: 2px solid #00796b; /* Dark teal */
+    border-radius: 8px;
+    width: 100%; /* Make it full width */
+    font-size: 1.2rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #004d40; /* Darker teal */
+    outline: none;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background-color: #00796b; /* Dark teal */
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+    transform: translateY(-2px);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #00796b; /* Dark teal */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
