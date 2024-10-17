@@ -36,13 +36,31 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: rgb(204, 246, 218);
+}
+
+
+main {
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px; /* Limit width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 /* Main Section Styles */
 section {
     padding: 2rem;
     text-align: center;
+}
+
+section.row {
+    margin-bottom: 50px;
 }
 
 h1 {
@@ -132,6 +150,52 @@ button:hover {
     background-color: #004d40; /* Darker teal on hover */
     transform: translateY(-2px);
 }
+
+//credits
+/* Card Styles */
+.card {
+    border: none; /* If you want to remove the border */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better aesthetics */
+    text-align: center;
+    margin: 20px auto; /* Centering the card */
+    width: 300px; /* Adjust width of the card */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-radius: 50%; /* This will make the image circular */
+    width: 150px; /* Ensuring the image has a consistent size */
+    height: 150px; /* Fixed height to keep image ratio */
+    object-fit: cover; /* Ensures the image stays within the circle */
+    margin: 0 auto; /* Centering the image */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555; /* Subtle color for the text */
+}
+
+.team-member img {
+    width: 100px; /* Adjust as necessary */
+    height: 100px; /* Adjust as necessary */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+
 
 /* Footer Styles */
 footer {
